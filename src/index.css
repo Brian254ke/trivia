@@ -1,0 +1,266 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+html, body{
+  overflow-x: hidden;
+  height: 100%;
+
+}
+
+@media   screen and (max-width: 660px) {
+    .container{
+    font-size: 10px;
+ }
+  }
+
+body{
+   background: #fff;
+   padding: 0;
+   margin:0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: 'Poppins', sans-serif;
+}
+.top{
+   margin-top:0;
+}
+
+.space {
+    padding-top: 40px;
+
+}
+
+.submit-field{
+   padding-bottom : 20px;
+   margin-bottom : 20px;
+
+}
+.container {
+    margin:auto;
+    padding :10px;
+    font-size : 24px;
+    text-align : center;
+    padding-top:120px;
+}
+.brand{
+    font-weight: bold;
+    font-size:36px;
+    text-align:center;
+    color : slateblue;
+}
+.submitfield button{
+    width :150px;
+    font-size :20px;
+    height : 40px;
+
+}
+.inputspace {
+     padding-top : 30px;
+     padding-bottom : 20px;
+
+}
+
+.btn {
+    border-radius:30px;
+    background-color : slateblue;
+    color:white;
+    border:none;
+    font-weight:bold;
+    width:100px;
+    height : 40px;
+}
+
+.btn:hover{
+ cursor:pointer;
+ background-color: green;
+}
+
+.submitfield{
+ padding:20px;
+ text-align:center;
+ padding-bottom:10px;
+}
+.inputfield{
+ text-align:center!important;
+}
+.inputfield input {
+    width :250px;
+    border: 2px solid slateblue;
+    border-radius : 30px;
+    height:40px;    
+}
+
+.innerp{
+color:#003366;
+font-size:20px;
+padding-top :20px;
+margin:auto; 
+
+} 
+
+.form{
+   width: 300px;
+   border:1px solid slateblue;
+  border-radius: 10px;
+  padding:5px;
+  margin:0 auto;
+  text-align:center;
+}
+
+input[type=text] {
+  padding: 12px 20px ;
+  color : green;
+  text-align:centre;
+  font-size: 19px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=int] {
+  padding: 12px ;
+  margin: 8px 0;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+
+.important {
+ padding:20px;
+ color: green;
+ text-decoration:none;
+ font-size: 18px;
+} 
+
+.centered {
+ text-align:centre;
+}
+
+::placeholder {
+  color: #333366;
+  text-align:center;
+}
+
+
+.disabled {
+ display: none;
+}
+.header {
+  display: block;
+  margin-bottom:50px;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 100%;
+   box-shadow: none;
+   background-color: #F9F9F6;
+   position: fixed;
+   height: 90px!important;
+   overflow: hidden;
+   z-index: 1;
+}
+.sidebarMenu{
+   z-index:2;
+   text-align:left;
+   margin-top:90px;
+   position:fixed;
+   background:#F9F9F6;
+   height:50%;
+   transition: transform 250ms ease-in-out;
+
+}
+/*.sidebarMenu {
+    height: 100%;
+    background-color:red;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 90px;
+    transform: translateX(-250px);
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+*/
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+ul li {
+text-align : left;
+   padding : 20px;
+ list-style:none;
+}
+.sidebarMenuInner li a{
+   color: slateblue;
+   text-transform: uppercase;
+   font-weight: bold;
+   cursor: pointer;
+   margin-left: -30px;
+   text-decoration: none;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+   transform: translateX(0);
+}
+
+input[type=checkbox] {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   display: none;
+}
+
+.sidebarIconToggle {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   cursor: pointer;
+   position: absolute;
+   z-index: 99;
+   height: 100%;
+   width: 100%;
+   top: 32px;
+   left: 15px;
+   height: 32px;
+   width: 32px;
+}
+.spinner {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   position: absolute;
+   height: 3px;
+   width: 100%;
+   background-color: slateblue;
+}
+.horizontal {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   position: relative;
+   float: left;
+   margin-top: 6px;
+}
+.diagonal.part-1 {
+   position: relative;
+   transition: all 0.3s;
+   box-sizing: border-box;
+   float: left;
+}
+.diagonal.part-2 {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   position: relative;
+   float: left;
+   margin-top: 6px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   transform: rotate(135deg);
+   margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+   transition: all 0.3s;
+   box-sizing: border-box;
+   transform: rotate(-135deg);
+   margin-top: -9px;
+}
